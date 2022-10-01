@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Playground</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1>Playing with CSS variables and <span class="hl">JS</span></h1>
+    <div class="container">
+      <div class="section section1">
+        <label class="label" for="spacing">Spacing</label>
+        <input
+          type="range"
+          name="spacing"
+          class="input spacing"
+          min="10"
+          max="100"
+          value="10"
+          data-suffix="px"
+        />
+      </div>
+      <div class="section section2">
+        <label class="label" for="blur">Blur</label>
+        <input
+          type="range"
+          name="blur"
+          class="input blur"
+          min="0"
+          max="25"
+          value="0"
+          data-suffix="px"
+        />
+      </div>
+      <div class="section section3">
+        <label class="label" for="color">Color</label>
+        <input
+          type="color"
+          name="color"
+          class="input color"
+          id="color"
+          value="#D0B48D"
+        />
+      </div>
+    </div>
+
+    <img class="img" src="elephant-g56284fbff_1920.jpg" alt="imagen" />
+  </body>
+  <script src="index.js"></script>
+</html>
